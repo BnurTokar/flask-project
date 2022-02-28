@@ -26,7 +26,7 @@ def test_request_page1(client):
     """This makes the index page"""
     response = client.get("/page1")
     assert response.status_code == 200
-    assert b"About Page" in response.data
+    assert b"Page 1" in response.data
 
 def test_request_page2(client):
     """This makes the index page"""
@@ -45,9 +45,3 @@ def test_request_page4(client):
     response = client.get("/page4")
     assert response.status_code == 200
     assert b"Page 4" in response.data
-
-def test_request_page_not_found(client):
-    """This makes the index page"""
-    response = client.get("/page5")
-    assert response.status_code == 404
-
