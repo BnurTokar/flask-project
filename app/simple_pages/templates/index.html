@@ -14,19 +14,23 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ url_for('static', filename='images/git_image_pic.png') }}" class="d-block w-100 " style="cursor:pointer" onclick="window.open('git_page', '_blank')"
+                <img src="{{ url_for('static', filename='images/git_image_pic.png') }}" class="d-block w-100 "
+                     style="cursor:pointer" onclick="window.open('git_page', '_blank')"
                      alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/docker_image_pic.png') }}" class="d-block w-100" style="cursor:pointer" onclick="window.open('docker_page', '_blank')"
+                <img src="{{ url_for('static', filename='images/docker_image_pic.png') }}" class="d-block w-100"
+                     style="cursor:pointer" onclick="window.open('docker_page', '_blank')"
                      alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/python_flask_image_pic.png') }}" class="d-block w-100" style="cursor:pointer" onclick="window.open('python_flask_page', '_blank')"
+                <img src="{{ url_for('static', filename='images/python_flask_image_pic.png') }}" class="d-block w-100"
+                     style="cursor:pointer" onclick="window.open('python_flask_page', '_blank')"
                      alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/cicd_image_pic.png') }}" class="d-block w-100" style="cursor:pointer" onclick="window.open('cicd_page', '_blank')"
+                <img src="{{ url_for('static', filename='images/cicd_image_pic.png') }}" class="d-block w-100"
+                     style="cursor:pointer" onclick="window.open('cicd_page', '_blank')"
                      alt="...">
             </div>
         </div>
@@ -44,40 +48,82 @@
 
     <div class="row md-4">
         <div class="col-sm">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 48rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title"> TECHNOLOGIES YOU ARE GOING TO LEARN IN THE WEB </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Beyzanur Tokar</h6>
+                    <div class="fs-6">
+                        <p class="card-text">
+                            1. Git - Explain Branches, Merge, Commit, Tags, Repositories.
+                        </p>
+                        <p>
+
+                            2. Docker - Explain containers, images, link to the project repository on docker hub,
+                            explain all the docker commands that you know. Explain how to start the project and how to
+                            access the container with the terminal using just terminal commands and not PyCharm
+                        </p>
+                        <p>
+                            3. Python / Flask - Talk about testing with pytest and give examples from your code. Explain
+                            how you created simple pages and how you tested it. Link to the project on Github Link to
+                            flask, flask Blueprint documentation, and flask testing with PyTest. Explain the purpose of
+                            every file in the project using an outline that represents the directory and file structure
+                            of the project.
+                        </p>
+                        <p>
+                            Outline Example
+                        </p>
+                        <p>
+                            Project Root Folder <- Root of the project
+                            docker-compose.yml <- Orchestration file that contains the configuration to develop locally,
+                            it overrides the Dockerfile to run the flask development server instead of running the
+                            gunicorn server that is used for hosting on Heroku
+                            Dockerfile <-File used to create an image to run in a container that runs the program
+                            4. Continuous Integration and Deployment - Explain how you have the project setup to use
+                            GitHub Actions, How you can review code using a development server before merging pull
+                            requests, how you can deploy master to a production server. Explain how you deploy an image
+                            of your project to Dockerhub when master is updated. GitHub Actions Documentation (Links to
+                            an external site.).
+                        </p>
+                        <p>
+                            Read and cite / quote from these articles for CI/CD:
+                        </p>
+                        <p>
+                            https://www.martinfowler.com/articles/continuousIntegration.html (Links to an external
+                            site.)
+                            https://www.martinfowler.com/bliki/ContinuousDelivery.html
+                        </p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 24rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">WHO AM I?</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">Beyzanur Tokar</h6>
+                    <div class="fs-6">
+                        <p class="card-text">
+                            I have a bachelor on computer engineer and am studing master of Information at NJIT. I
+                            worked on a wide variety of interesting and meaningful projects in
+                            both groups or individually to build immersive, beautiful, user-friendly and
+                            frustration-free
+                            applications. These projects mostly present the various aspects of both human-computer
+                            interaction and user experience.
+                        </p>
+                        <p>
+                            I am passionate about designing and providing human-in-the-loop systems that are solving
+                            real
+                            life problems by using emerging technologies and making sure that the subjects as well as
+                            the
+                            purposes of systems are very clear.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 {% endblock %}
