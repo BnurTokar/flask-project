@@ -44,7 +44,7 @@ def test_request_page4(client):
     """This makes the index page"""
     response = client.get("/cicd_page")
     assert response.status_code == 200
-    assert b"Page 4" in response.data
+    assert b"CI/CD" in response.data
 
 def test_request_page_not_found(client):
     """This makes the index page"""
