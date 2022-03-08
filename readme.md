@@ -1,13 +1,13 @@
 # Project Setup
 # Beyzanur Tokar's Project
 
-([![Production Workflow](https://github.com/BnurTokar/flask-project/actions/workflows/prod.yml/badge.svg)](https://github.com/BnurTokar/flask-project/actions/workflows/prod.yml))]
-
-* [Production Deployment](https://beyzanur-flask-prod.herokuapp.com)
-
 [![Development Workflow](https://github.com/BnurTokar/flask-project/actions/workflows/dev.yml/badge.svg)](https://github.com/BnurTokar/flask-project/actions/workflows/dev.yml)
 
-* [Development Deployment](https://beyzanur-flask.herokuapp.com) 
+* [Development Deployment](https://beyzanur-flask.herokuapp.com)
+
+[![Production Workflow](https://github.com/BnurTokar/flask-project/actions/workflows/prod.yml/badge.svg)](https://github.com/BnurTokar/flask-project/actions/workflows/prod.yml)
+
+*[Production Deployment](https://beyzanur-flask-prod.herokuapp.com)
 
 
 ## Setting up CI/CD
