@@ -38,7 +38,7 @@ def test_request_page3(client):
     """This makes the index page"""
     response = client.get("/python_flask_page")
     assert response.status_code == 200
-    assert b"Page 3" in response.data
+    assert b"Python Flask" in response.data
 
 def test_request_page4(client):
     """This makes the index page"""
