@@ -40,7 +40,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: bntokar/beyzanur-flask-prod
+          images: bntokar/beyzanur-prod
 
       - name: Build and push
         uses: docker/build-push-action@v2
