@@ -1,5 +1,6 @@
 """ This is the Calculation Class"""
-from operations import Operation, Addition as Add, Subtraction as Sub, Multiplication as Mul, Division as Div
+from calculator.operations import Operation
+
 
 class Calculation:
     """ This class is for get_result operation"""
