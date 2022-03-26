@@ -1,6 +1,6 @@
 """ This is the Calculator Class"""
-from operations import Operation, Addition as Add, Subtraction as Sub, Multiplication as Mul, Division as Div, Addition
-from calculation import Calculation
+from calculator.operations import Operation, Addition as Add, Subtraction as Sub, Multiplication as Mul, Division as Div, Addition
+from calculator.calculation import Calculation
 
 class Calculator:
     """This is Calculator class"""
