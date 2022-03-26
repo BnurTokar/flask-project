@@ -1,7 +1,5 @@
 """Testing the Calculator"""
 from calculator import Calculator, Operation
-from calculator.operations import Addition, Subtraction, Multiplication, Division
-
 def test_calculator_is_instance():
     calculator = Calculator()
     assert isinstance(calculator, Calculator)
