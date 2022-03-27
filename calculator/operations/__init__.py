@@ -33,4 +33,3 @@ class Division(Operation):
             return value_1 / value_2
         except ZeroDivisionError:
             return "It is impossible to divide by 0"
-

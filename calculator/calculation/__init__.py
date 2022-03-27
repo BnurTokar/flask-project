@@ -5,7 +5,6 @@ from calculator.operations import Operation
 class Calculation:
     """ This class is for get_result operation"""
     """"Strategy Pattern"""
-
     opr = Operation
 
     def __init__(self,value_1, value_2):
