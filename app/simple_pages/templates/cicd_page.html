@@ -1,12 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
-        <div id="main_menu">
+        <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
             <h1>Beyzanur Tokar's CI/CD Page</h1>
-            <h3>In this page, you are learning how you have the project setup to use GitHub Actions, how you can review
+            <h3 class="lead">In this page, you are learning how you have the project setup to use GitHub Actions, how you can review
                 code using a development server before merging pull requests, how you can deploy master to a production
-                server, how you deploy an image of your project to Dockerhub when master is updated.
-            </h3>
+                server, how you deploy an image of your project to Dockerhub when master is updated.</h3>
             <br>
         </div>
         <div class="row md-4">
@@ -14,31 +12,31 @@
                 <div id="main_content">
 
                     <h2 style="color:red">Setup for GitHub Action:</h2>
-                    <p>
+                    <p class="lead">
                         Create a .github/workflows directory in your repository on GitHub if this directory does not
                         already
                         exist.
                     </p>
-                    <p>
+                    <p class="lead">
                         In the .github/workflows directory, create a file named github-actions-demo.yml.
                     </p>
-                    <p>
+                    <p class="lead">
                         Copy the following YAML contents into the github-actions-demo.yml file.
                     </p>
-                    <p>
+                    <p class="lead">
                         Scroll to the bottom of the page and select Create a new branch for this commit and start a pull
                         request. Then, to create a pull request, click Propose new file.
                     </p>
-                    <p>
+                    <p class="lead">
                         Committing the workflow file to a branch in your repository triggers the push event and runs
                         your
                         workflow.
                     </p>
-                    <p>
+                    <p class="lead">
 
                     <h2 style="color:red"> Review Code Using a Development Server</h2>
                     </p>
-                    <p>
+                    <p class="lead">
                         We are creating a commit in a branch and than We can merge it with main branch into Github, but
                         also
                         we can add a Ci/CD directly in our repository. Therefore, we are able to test our code in Github
@@ -48,40 +46,40 @@
                         these
                         jobs, there is test code working whenever a commit is pushed.
                     </p>
-                    <p>
+                    <p class="lead">
                     <h2 style="color:red">Deploy Master to a Production Server</h2>
                     </p>
-                    <p>
+                    <p class="lead">
                         Have a master branch that your code works
                     </p>
-                    <p>
+                    <p class="lead">
                         Have a branch
                     </p>
-                    <p>
+                    <p class="lead">
                         Do the work on branch
                     </p>
-                    <p>
+                    <p class="lead">
                         Push the work to GitHub
                     </p>
-                    <p>
+                    <p class="lead">
                         Do a pull request and it is going to trigger testing
                     </p>
-                    <p>
+                    <p class="lead">
                         If the testing passes, merge the branch into master
                     </p>
-                    <p>
+                    <p class="lead">
                         Rebase from the remote master into your local
                     </p>
-                    <p>
+                    <p class="lead">
                     <h2 style="color:red">How to Deploy an Image of a Project to Dockerhub</h2>
                     </p>
-                    <p>
+                    <p class="lead">
                         When master is updated you have to push your images into DockerHub. First, you must create a
                         repository and copy the tag of the repo. Then write the tag at the terminal. Your images was
                         pushed
                         to DockerHub so you can pull and run the image on your computer.
                     </p>
-                    <p>
+                    <p class="lead">
                         <!-- Optional JavaScript; choose one of the two! -->
 
                         <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -102,5 +100,4 @@
 
             </div>
         </div>
-    </div>
 {% endblock %}

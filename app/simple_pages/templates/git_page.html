@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
-        <div id="main_menu">
+        <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
             <h1>Beyzanur Tokar's Git Page </h1>
-            <h3>You are getting a basic knowledge about branches, merge, commit, tags and repository in the
-                document.<h3>
+            <h3 class="lead">You are getting a basic knowledge about branches, merge, commit, tags and repository in the
+                document.</h3>
         </div>
-        <div class="row md-4">
+        <div class="row">
             <div class="col-8">
                 <div id="main_content">
                     <br>
                     <h2 style="color:red">Branch:</h2>
                     <br>
-                    <p>
+                    <p class="lead">
                         Branching is essentially a new copy of your source code of the directory. While making a branch,
                         you
                         are replaying it in a new area. Restoring the messed up development might be an expensive
@@ -21,21 +20,21 @@
                         working
                         on it, so you can continue to do work without messing with the main line.
                     </p>
-                    <p>
+                    <p class="lead">
                         Branches are the most important thing for Git. We need to know some operations of the branches
                         to
                         use Git. These are:
                     </p>
-                    <p>
+                    <p class="lead">
                         <span style="color:BLUE"> Create Branch: </span> It is the first step of starting the process.
                         To create a new branch and check out of
                         it, you can use the code in the terminal.
                     </p>
-                    <p>
+                    <p class="lead">
                         git checkout -b
                         "branch-name"
                     </p>
-                    <p>
+                    <p class="lead">
                         <span style="color:BLUE">Merge Branch:</span> If you are done with a branch and want to use it
                         in any other branch in your Git
                         repository. you can merge it with another one. You can merge the branches by using the following
@@ -44,54 +43,54 @@
                     git checkout main
                     git merge
                     "branch-name"
-                        <p>
+                        <p class="lead">
                             <span style="color:BLUE">Delete a Branch: </span>If you are done with the branch and need no
                             longer, you can delete the
                             branch by using the code.
                         </p>
-                        <p>
+                        <p class="lead">
                             git -d
                             "branch-name"
                         </p>
-                        <p>
+                        <p class="lead">
                             <span style="color:BLUE"> Checkout Branch:</span> You are using it to change your directory.
                         </p>
-                        <p>
+                        <p class="lead">
                             git checkout -b
                             "branch-name"
                         </p>
-                        <p>
+                        <p class="lead">
                             git checkout main
                         </p>
-                        <p>
+                        <p class="lead">
 
                             <h2 style="color:red">Commit:</h2>
                         </p>
-                        <p>
+                        <p class="lead">
                             The commit command is used to save your changes on your repository. There are some
                             basic commands:
                         </p>
-                        <p>
+                        <p class="lead">
 
                             git commit
                         </p>
-                        <p>
+                        <p class="lead">
                             git commit -a
                             git commit -m “commit message”
                         </p>
-                        <p>
+                        <p class="lead">
                             Tags:
 
                         </p>
-                        <p>
+                        <p class="lead">
                             Tagging the revision can be very helpful. You can easily return to the label
                             or version you specify.
 
                         </p>
-                        <p>
+                        <p class="lead">
                             <h2 style="color:red">Repository:</h2>
                         </p>
-                        <p>
+                        <p class="lead">
                             A Git repository is the .git/ folder inside a project. This folder keep all changes
                             of the project. It is also a platform you can work in a team so you can follow all
                             changes your teammate made.
@@ -113,9 +112,5 @@
 
                 </div>
             </div>
-            <div class="col">
-
-            </div>
         </div>
-    </div>
 {% endblock %}

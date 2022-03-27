@@ -1,5 +1,6 @@
 """Testing the Calculator"""
-from calculator import Calculator
+
+
 def test_calculator_is_instance():
     calculator = Calculator()
     assert isinstance(calculator, Calculator)
@@ -12,16 +13,25 @@ def test_calculator_result_property():
     assert calc1.result == 5
     assert calc2.result == 6
 
+from calculator import Calculator
+
 def test_calculator_add_method():
+    """arranging step"""
+    value_1 = 3
+    value_2 = 4
     calculator = Calculator()
-    assert calculator.add(3,4) == 7
-    assert calculator.add(2,3) == 5
-    assert calculator.add(2,3,4,5) == 14
+    """acting step"""
+    result= calculator.add(value_1, value_2)
+    """assertion step"""
+    assert result == 7
 
 def test_calculator_sub_method():
+    """arranging step"""
+    value_1 = 3
+    value_2 = 2
     calculator = Calculator()
+    """acting and assertion steps"""
     assert calculator.sub(3,2) == 1
-    assert calculator.sub(2,6) == -4
 
 def test_calculator_mul_method():
     calculator = Calculator()
