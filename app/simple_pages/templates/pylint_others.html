@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
+        <h1>Pylint & Others</h1>
+        <h3 class="lead"></h3>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div id="main_content">
+                <h3>Pylint</h3>
+                <p class="lead">
+                    In Python language, Pylint is a tool used to check for errors of your code. It helps to find out
+                    things that are possible dangers in your codebase. It also gives a quick overview about your complex
+                    python code.
+                </p>
+                <p class="lead">
+                    It is the first command line prompt:
+                </p>
+                <p class="lead">
+                    root@95b7ca75e8d8:/home/myuser# pylint
+                </p>
+                <p class="lead">
+                    You have to care about messages of convention, refactor, warnings, errors, fatal after running this
+                    command. Some example of the messages:
+                </p>
+                <p class="lead">
+                    simplecaesar.py:3:0: W0301: Unnecessary semicolon (unnecessary-semicolon)
+                    simplecaesar.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+                    simplecaesar.py:5:0: C0103: Constant name "shift" doesn't conform to UPPER_CASE naming style
+                    (invalid-name)
+                    simplecaesar.py:9:0: C0103: Constant name "encoded" doesn't conform to UPPER_CASE naming style
+                    (invalid-name)
+                    simplecaesar.py:13:12: C0103: Constant name "encoded" doesn't conform to UPPER_CASE naming style
+                    (invalid-name)
+                </p>
+                <h3>Pep-8</h3>
+                <p class="lead">
+                    Pep-8 is a style guide for Python code. It was written by Guido van Rossum, Barry Warsaw, and Nick
+                    Coghlan. Fundamental principle of the Pep-8 is to improve consistency and readability of the
+                    codebase in Python language. Readability is very important because a code is read much more often
+                    than it is written as Guido van Rossum said. After a while after you wrote a code, you can
+                    understand all of the code in a short time if you follow the Pep-8 guide.
+                </p>
+                <h5>How To Choose Names: </h5>
+                <p class="lead">
+                    While you are trying to understand a code, you have to figure out so many things by looking at the
+                    name. Therefore, it is very important to give common styles to your types.
+                </p>
+                <p class="lead">
+                    For example: function uses a lowercase word, and words with underscores like “function,
+                    my_function”.
+                    Class starts with a capital letter and continues with lowercase words.
+                </p>
+                <p class="lead">
+                    In addition to convention, giving descriptive names of what the object represents improves
+                    readability.
+                    Instead of giving the names of “x” and “y” to represent first name and last name for your variables,
+                    giving the names of “first_name” and “last_name” improves readability of the code.
+                </p>
+                <h5>Code Layout:</h5>
+                <p class="lead">
+                Black lines improve readability of the code.
+                PEP 8 suggests lines should be limited to 79 characters.
+                If breaking lines needs binary operation, you should put that before the operation.
+                Put 4 consecutive spaces for indentation instead of using tabs.
+                </p>
+                <h5>Comment and Documentation String:</h5>
+                <p class="lead">
+                Putting a comment inside of your code helps you to understand the functionality of your code blocks. Use
+                “#” and single space before your explanation. By giving inline comments, be more specific instead of
+                explaining everything. Put """ before and after your explanation for multiline strings.
+                </p>
+                <h5>Linters and Autoformatters:</h5>
+                <p class="lead">
+                Linters and autoformatters are tools to help your code to fit the complaint of Pep-8. While Linters
+                shows flag errors and stylistic problems in the code. Autoformatters reformat your code automatically to
+                fit Pep-8 compliant.
+                </p>
+
+            </div>
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                    crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            -->
+            <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+        </div>
+    </div>
+    </div>
+{% endblock %}
