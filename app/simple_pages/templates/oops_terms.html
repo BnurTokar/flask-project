@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
+        <h1>Object Oriented Programming (OOP) Terms in Python:</h1>
+        <h3 class="lead"></h3>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div id="main_content">
+                <h3>Object Oriented Programming:</h3>
+                <p class="lead">
+                    Object-Oriented Programming (OOP) makes the program easy to understand as well as efficient. Python
+                    supports the OOP approach like many other programming languages. OOP is a programming model that
+                    uses objects and classes. Data and functions work together in a single unit.
+                </p>
+                <h3>Instantiation:</h3>
+
+                <p class="lead">
+                    It is the process of creating a class instance, in other words, the process of creating a single
+                    object.
+                </p>
+                <h3>Object:</h3>
+                <p class="lead">
+                    It is a data type that can be utilized to represent a thing, or model a concept, most likely in the
+                    real
+                    world, like cat, dog, vehicle etc.. It consists of state and behavior that are relevant to it. An
+                    object’s state is represented as attributes or data, and behavior is represented as its methods or
+                    operations.
+                </p>
+                <h3>Class:</h3>
+                <p class="lead">
+                    A class is a user-defined code template, or “blueprint”, for creating objects. It gives a meaning to
+                    object since it contains the object’s methods and attributes. For example, you may have a Calculator
+                    object which needs to calculate requested mathematical operations such as addition, subtraction,
+                    multiplication and division. Hence one may use a Calculator class to contain these methods so that
+                    Calculator object can use it once needed.
+                </p>
+                <h3>Namespace:</h3>
+                <p class="lead">
+                    In Python, a namespace is a system in the form of a Python dictionary that controls every single
+                    object,
+                    such as method or variable, with a unique name in a program. It is a key-value pair system and the
+                    keys
+                    correspond to the names and the values correspond to the objects.
+                    There are four types of namespaces: built-in namespaces, global namespaces, local namespaces and
+                    enclosing namespaces.
+                </p>
+                <h3>Constructor:</h3>
+                <p class="lead">
+                    A constructor is a method working when creating an object. It is an object method always inside a
+                    class. We can initialize variables inside the constructor, so after creating an object its variables
+                    (data members) are initialized. In Python, constructor method is created by using the ” __init__”
+                    method.
+                </p>
+                <p class="lead">
+                    There are two types of constructor; default constructor and parameterized constructor. In the below
+                    example, you can see an example of a parameterized constructor. When an object is created from
+                    Calculator class, the object automatically initializes the data member of “values” of “__init__”
+                    method (constructor).
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/constructor_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <h3>Fixture:</h3>
+                <p class="lead">
+                    Fixture is helping the tests by providing and feeding some data as an input, such as database
+                    connection, so that the results are going to be repeatable. This provides a huge benefit to tests
+                    since we do not need to run the same code every single test. Fixture runs and returns the data prior
+                    to running each test.
+                </p>
+                <h3>Type Hint:</h3>
+                <p class="lead">
+                    Type hint is a format to indicate what kinds of data-type or object that values contain. Type
+                    hinting
+                    makes the code more readable and understandable. Types of objects can be numbers (integers,
+                    floating-point numbers, and complex numbers), booleans, the “null” type, strings, dictionary, tuple
+                    and
+                    list. Dictionaries, tuples and lists can contain other types of objects inside them. Type hinting
+                    uses
+                    colon to indicate the type of an object. For example, “tuple_list: tuple” tells us that the
+                    tuple_list
+                    object is a tuple. Therefore, you can’t behave the object (tuble_list) as a list or dictionary, but
+                    tuple!
+                </p>
+                <h3>Type Casting:</h3>
+                <p class="lead">
+                    Type casting is the method to convert one type to another. There are two kinds of type casting:
+                    implicit
+                    type casting and explicit type casting. In implicit type casting, Python automatically converts one
+                    type
+                    to another without developer’s preferences. For example; when a developer types “a = 7”, python
+                    converts
+                    a variable to int. On the other hand, in explicit type casting, developers need to use a function
+                    for
+                    conversion. Some of the functions for explicit type casting are int(), float(), str(). Like in the
+                    example of “n = int(13.2)”, n uses int() type casting to convert float type to int.
+                </p>
+                <h3>Unit testing:</h3>
+                <p class="lead">
+                    Unit testing is the software testing method to improve the quality of the source code in order for
+                    all
+                    parts of the project working well. There are two kinds of unit testing - manual and automated.
+                    Automated
+                    testing is processing faster and more accurately than manual testing. The developers use automated
+                    testing by expecting all parts of the code to behave to meet its requirements. Manual approach is
+                    time
+                    consuming, since developers need to write test code manually instead of build-in tests. On the other
+                    hand, manual testing helps the code to perform as instructional procedures.
+                </p>
+                <p class="lead">
+                    Unit testing provides so many advantages for the source code. Using unit testing speeds up your
+                    process
+                    because hanging code in a large project can be expensive and also causes damages and possibile
+                    breaking
+                    to the codebase. Thanks to unit testing, the debugging process is going to be simple. In the early
+                    stage
+                    of software development, you are going to recognize bugs or any problems in the system. And also it
+                    improves readability of the code by reducing the number of bugs occured in the code.
+                </p>
+                <h3>Method:</h3>
+                <p class="lead">
+                    Methods are functions defined inside the body of a class. They are used to define the behaviors of
+                    the
+                    object such as meowing, eating for a cat object. There are three types of methods in Python. They
+                    are
+                    instance method, static method, class method.
+                </p>
+                <h3>Instance Method:</h3>
+                <p class="lead">
+                    Instance methods are methods that every single object has its own copy of. In other words, instance
+                    methods are not shareable between objects. These methods are the most common type of methods. Simply
+                    because, objects can access their unique data through instance methods. Also instance methods should
+                    use
+                    the self parameter.
+                </p>
+                <p class="lead">
+                    Consider a shape class that has triangle and circle objects. Each object will use the get_perimeter
+                    method, however, they both have unique values such as 25 for triangle, 54 for circle. Hence, the
+                    instance method’s result will be unique per instantiated object.
+                </p>
+                <h3>Static Method:</h3>
+                <p class="lead">
+                    Static method uses “@staticmethod” decorator to be indicated. Static method are part of a class in
+                    some
+                    way, but it doesn’t have any permission to access and modify class-specific data such as objects,
+                    methods, variables and classes. Unlike Instance Method, there is no need to use self as a parameter
+                    for
+                    this method. Moreover, there is no need for instantiation as well. Simply calling the function will
+                    be
+                    enough.
+                </p>
+                <h3>Instance and Static Properties:</h3>
+                <p class="lead">
+                    When a variable is declared in a class, it will be static or class property in Python if and only if
+                    it
+                    is declared outside any method. Hence, static property cannot be directly referred through an
+                    instance.
+                    It is shared by all the class objects.
+                </p>
+                <p class="lead">
+                    On the other hand, instant properties are defined in the constructor, therefore, they stick to the
+                    object and become attached to an instance of a class.
+                </p>
+                <h3>Access Modifiers in Python : Public, Private and Protected</h3>
+                <p class="lead">
+                    The members of a class that are declared public are easily accessible from any part of the program.
+                    All
+                    data members and member functions of a class are public by default.
+                </p>
+                <p class="lead">
+                    The members of a class that are declared protected are only accessible to a class derived from it.
+                    Data
+                    members of a class are declared protected by adding a single underscore ‘_’ symbol before the data
+                    member of that class.
+                </p>
+                <p class="lead">
+                    The members of a class that are declared private are accessible within the class only, private
+                    access
+                    modifier is the most secure access modifier. Data members of a class are declared private by adding
+                    a
+                    double underscore ‘__’ symbol before the data member of that class.
+                </p>
+                <h3>Encapsulation:</h3>
+                <p class="lead">
+                    Encapsulation is one of the fundamental principles in object-oriented programming. It provides
+                    restrictions in order for you to protect your data from accidental modification. Encapsulation
+                    doesn't
+                    allow you to directly access your data and methods from outside of an object. To create such
+                    restrictions, members and methods are going to be defined as either private or protected.
+                </p>
+                <p class="lead">
+                    Consider a real life example of encapsulation; while a customer is buying a pizza in a restaurant,
+                    he
+                    needs the information about ingredients and price. However, he is not allowed to reach the data of
+                    the
+                    manufacturing cost and brands of the ingredients in the pizza. If we create Pizza and Customer
+                    classes,
+                    ingredients and the price methods are going to be public to customers, and methods of the
+                    manufacturing
+                    cost and brands of ingredients are going to be private.
+                </p>
+                <p class="lead">
+                    On the other hand, in the calculator example, you can see the encapsulation principle as follows:
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/encapsulation_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <br></br>
+                <p class="lead">
+                    In the Calculator class, there are “add” and “subtract” methods. Both “calculation” variables inside
+                    each of the methods are examples of the encapsulation because they are not available for
+                    modification since there is no access to the variable outside of the method and the method is
+                    defined as static.
+                </p>
+                <h3>Abstraction:</h3>
+                <p class="lead">
+                    Abstraction is one of the key concepts of the object oriented programming languages. It is a kind of
+                    extension of encapsulation, and it is usually used for complex and large codebase. Python does not
+                    provide an abstract method, but provides a module named Abstract Base Class(ABC). You can import the
+                    ABC
+                    class to create an abstract base interface. A public method does not know the processes inside
+                    private
+                    methods and only gets what information it needs. When a class contains at least one abstract method,
+                    which contains the implementation in the sub-classes but not in the parent class, then the class
+                    becomes
+                    an abstract class. but This type of software tends to last longer without having modification to the
+                    codebase. The main principle of the abstraction concept is hiding unnecessary details from users.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/abstraction_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    In this code snippet, “Operation class“ is an abstract base class, because it calls a function which
+                    calls a different one.
+                </p>
+                <h3>Inheritance:</h3>
+                <p class="lead">
+                    Inheritance is an important aspect in object oriented programming languages. Main idea of
+                    inheritance is
+                    to use the properties of another class. Put it simply, it is the capability of inheriting the
+                    properties. Biggest advantage of Inheritance is the reusability of the codebase since we don’t need
+                    to
+                    write the same code again and again. It may also represent real-world relationships as well. Hence,
+                    we
+                    have a term called Parent Class which is being inherited from, and Child Class which inherits from
+                    Parent Class.
+                </p>
+                <p class="lead">
+                    There are different types of inheritance in python: a child class of a parent class, a child class
+                    of
+                    multiple parent classes, multiple child classes of a parent class, chain classes which are
+                    multilevel
+                    classes, multiple combinations of different classes.
+                </p>
+                <p class="lead">
+                    Consider a real life example of inheritance; each of the students and teachers are a person, but
+                    they
+                    also have extra specifications to distinguish themselves. Students learn different lessons such as
+                    physics, math, art, etc.; while teachers teach a specific lesson. So we create “Person” class as a
+                    parent class, “Teacher” and “Student” classes as child classes. Therefore, the child classes can
+                    access
+                    all the same specifications to use in Person class without rewriting the code. On the other hand,
+                    both
+                    Teacher and Student classes will have their own properties and methods to distinguish themselves as
+                    well.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/inheritance_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+
+                <p class="lead">
+                    In this code snippet, “Operation class“ is an abstract base class, because it calls a function which
+                    calls a different one.
+                </p>
+                <h3>Polymorphism:</h3>
+                <p class="lead">
+                    It is one of the concepts of object oriented programming. While we are implementing inheritance, we
+                    may face some problems. Child classes need the same method with the parent class by having different
+                    specifications. They can need different parameters or different data types or different numbers of
+                    parameters. At this moment, Polymorphism comes into play. It is the concept in Python to define
+                    functions in derived, or child class, that have exactly the same name as the functions in the parent
+                    class with its unique implementation and different signatures.
+                </p>
+                <p class="lead">
+                    Think about a Vehicle parent class and Car and Truck child classes derived from the Vehicle class.
+                    All of the child classes need a get_vehicle_type method but may have different values such as sedan,
+                    SUV etc. for Car class’ method, and Australian Road Train, Cement Truck for Truck class’ method. So
+                    we need to override the get_vehicle_type inside the child classes appropriately.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/inheritance_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    Method overwriting under polymorphism rule. We can find polymorphism example above coding snippet
+                    where get_result function has unique implementation in the child class called Addition.
+                </p>
+
+
+            </div>
+
+
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                    crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            -->
+            <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+        </div>
+    </div>
+    </div>
+{% endblock %}
