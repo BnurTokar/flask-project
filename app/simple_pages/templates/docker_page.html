@@ -1,67 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
-        <div id="main_menu">
+        <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
             <h1>Beyzanur Tokar's Docker Page</h1>
-            <h3>You are getting the basic knowledge about containers, images, docker hub and you are going to learn how
-                to start a project and access the container with the terminal using terminal commands.
-            </h3>
+            <h3 class="lead">You are getting the basic knowledge about containers, images, docker hub and you are going to learn how
+                to start a project and access the container with the terminal using terminal commands.</h3>
             <br>
         </div>
         <div class="row md-4">
             <div class="col-8">
                 <div id="main_content">
                     <h2 style="color:red"> Containers:</h2>
-                    <p>
+                    <p class="lead">
                         Containerization and virtualization look similar but they are for different purposes. Container
                         engine provides Apps Operating System (OS).
                     </p>
-                    <p>
+                    <p class="lead">
                         In Virtual Machines, all computer have their own RAM. In Containers, infrastructure has RAM.
                         Operating system have access to the RAM.
                     </p>
-                    <p>
+                    <p class="lead">
                     <h2 style="color:red"> Images:</h2>
                     </p>
-                    <p>
+                    <p class="lead">
                         A Docker image is a read-only template that contains a set of instructions for creating a
                         container
                         that can run on the Docker platform.
                     </p>
-                    <p>
+                    <p class="lead">
                     <h2 style="color:red"> The Docker Command:</h2>
                     </p>
-                    <p>
+                    <p class="lead">
                         We are using the command line because web servers have a composition.
                     </p>
-                    <p>
+                    <p class="lead">
                         “ docker ps ”
                     </p>
-                    <p>
+                    <p class="lead">
                         - See if anything already start it up.
                     </p>
-                    <p>
+                    <p class="lead">
                         “docker kill -image number-”
                     </p>
-                    <p>
+                    <p class="lead">
                         - Stop running images.
                     </p>
-                    <p>
+                    <p class="lead">
                         “docker compose up –build”
                     </p>
-                    <p>
+                    <p class="lead">
                         - Build an image.
                     </p>
-                    <p>
+                    <p class="lead">
                         “ docker run -itp 80:80 ubuntu “
                     </p>
-                    <p>
+                    <p class="lead">
                         - Run the image in port 80 of the network on your computer.
                     </p>
-                    <p>
+                    <p class="lead">
                     <h2 style="color:red">How to Start Project:</h2>
                     </p>
-                    <p>
+                    <p class="lead">
                         You can start the project using build an image command in the terminal. And you can access the
                         container by using “docker ps” command in the terminal.
                     </p>
@@ -85,5 +83,4 @@
 
             </div>
         </div>
-    </div>
 {% endblock %}
