@@ -17,7 +17,7 @@ def test_request_index(client):
     """This makes the index page"""
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Index Page" in response.data
+    assert b"TECHNOLOGIES YOU ARE GOING TO LEARN IN THE WEB" in response.data
 
 def test_request_about(client):
     """This makes the index page"""
