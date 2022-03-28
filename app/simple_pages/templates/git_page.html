@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-        <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
-            <h1>Beyzanur Tokar's Git Page </h1>
-            <h3 class="lead">You are getting a basic knowledge about branches, merge, commit, tags and repository in the
-                document.</h3>
-        </div>
-        <div class="row">
-            <div class="col-8">
-                <div id="main_content">
-                    <br>
-                    <h2 style="color:red">Branch:</h2>
-                    <br>
+    <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-dark" style="background-color: whitesmoke">
+        <h1>Git</h1>
+        <h3 class="lead">You are getting a basic knowledge about branches, merge, commit, tags and repository in the
+            document.</h3>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div id="main_content">
+                <br>
+                <h2 id="branch_id">Branch:</h2>
+                <br>
+                <div class="container">
                     <p class="lead">
                         Branching is essentially a new copy of your source code of the directory. While making a branch,
                         you
@@ -40,77 +41,83 @@
                         repository. you can merge it with another one. You can merge the branches by using the following
                         code.
                     </p>
-                    git checkout main
-                    git merge
-                    "branch-name"
-                        <p class="lead">
-                            <span style="color:BLUE">Delete a Branch: </span>If you are done with the branch and need no
-                            longer, you can delete the
-                            branch by using the code.
-                        </p>
-                        <p class="lead">
-                            git -d
-                            "branch-name"
-                        </p>
-                        <p class="lead">
-                            <span style="color:BLUE"> Checkout Branch:</span> You are using it to change your directory.
-                        </p>
-                        <p class="lead">
-                            git checkout -b
-                            "branch-name"
-                        </p>
-                        <p class="lead">
-                            git checkout main
-                        </p>
-                        <p class="lead">
-
-                            <h2 style="color:red">Commit:</h2>
-                        </p>
-                        <p class="lead">
-                            The commit command is used to save your changes on your repository. There are some
-                            basic commands:
-                        </p>
-                        <p class="lead">
-
-                            git commit
-                        </p>
-                        <p class="lead">
-                            git commit -a
-                            git commit -m “commit message”
-                        </p>
-                        <p class="lead">
-                            Tags:
-
-                        </p>
-                        <p class="lead">
-                            Tagging the revision can be very helpful. You can easily return to the label
-                            or version you specify.
-
-                        </p>
-                        <p class="lead">
-                            <h2 style="color:red">Repository:</h2>
-                        </p>
-                        <p class="lead">
-                            A Git repository is the .git/ folder inside a project. This folder keep all changes
-                            of the project. It is also a platform you can work in a team so you can follow all
-                            changes your teammate made.
-                        </p>
-
-                        <!-- Optional JavaScript; choose one of the two! -->
-
-                        <!-- Option 1: Bootstrap Bundle with Popper -->
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                                crossorigin="anonymous"></script>
-
-                        <!-- Option 2: Separate Popper and Bootstrap JS -->
-                        <!--
-                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-                        -->
-                        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-
+                    <p class="lead">
+                        git checkout main
+                    </p>
+                    <p class="lead">
+                        git merge
+                        "branch-name"
+                    </p>
+                    <p class="lead">
+                        <span style="color:BLUE">Delete a Branch: </span>If you are done with the branch and need no
+                        longer, you can delete the
+                        branch by using the code.
+                    </p>
+                    <p class="lead">
+                        git -d
+                        "branch-name"
+                    </p>
+                    <p class="lead">
+                        <span style="color:BLUE"> Checkout Branch:</span> You are using it to change your directory.
+                    </p>
+                    <p class="lead">
+                        git checkout -b
+                        "branch-name"
+                    </p>
+                    <p class="lead">
+                        git checkout main
+                    </p>
                 </div>
+                <h2>Commit:</h2>
+                <div class="container">
+                    <p class="lead">
+                        The commit command is used to save your changes on your repository. There are some
+                        basic commands:
+                    </p>
+                    <p class="lead">
+
+                        git commit
+                    </p>
+                    <p class="lead">
+                        git commit -a
+                        git commit -m “commit message”
+                    </p>
+                    <p class="lead">
+                        Tags:
+
+                    </p>
+                    <p class="lead">
+                        Tagging the revision can be very helpful. You can easily return to the label
+                        or version you specify.
+
+                    </p>
+                </div>
+                <h2 id="repo_id">Repository:</h2>
+                <div class="container">
+                    <p class="lead">
+                        A Git repository is the .git/ folder inside a project. This folder keep all changes
+                        of the project. It is also a platform you can work in a team so you can follow all
+                        changes your teammate made.
+                    </p>
+                </div>
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                        crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                -->
+                <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
             </div>
         </div>
+        <div class="col-2 lead">
+
+        </div>
+    </div>
 {% endblock %}
