@@ -15,6 +15,10 @@
                     aria-label="Slide 5"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
                     aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -38,13 +42,23 @@
                      alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ url_for('static', filename='images/OOPS_pic.png') }}" class="d-block w-100"
-                     style="cursor:pointer" onclick="window.open('cicd_page', '_blank')"
+                <img src="{{ url_for('static', filename='images/pylint_img.png') }}" class="d-block w-100"
+                     style="cursor:pointer" onclick="window.open('pylint_others', '_blank')"
                      alt="...">
             </div>
             <div class="carousel-item">
                 <img src="{{ url_for('static', filename='images/solid_pic.png') }}" class="d-block w-100"
-                     style="cursor:pointer" onclick="window.open('cicd_page', '_blank')"
+                     style="cursor:pointer" onclick="window.open('overview_solid', '_blank')"
+                     alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/OOPS_pic.png') }}" class="d-block w-100"
+                     style="cursor:pointer" onclick="window.open('oops_terms', '_blank')"
+                     alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/assert_act_assert_img.png') }}" class="d-block w-100"
+                     style="cursor:pointer" onclick="window.open('aaa_testing', '_blank')"
                      alt="...">
             </div>
         </div>
@@ -84,27 +98,10 @@
                             of the project.
                         </p>
                         <p>
-                            Outline Example
+                            4.CI/CD overview
                         </p>
                         <p>
-                            Project Root Folder <- Root of the project
-                            docker-compose.yml <- Orchestration file that contains the configuration to develop locally,
-                            it overrides the Dockerfile to run the flask development server instead of running the
-                            gunicorn server that is used for hosting on Heroku
-                            Dockerfile <-File used to create an image to run in a container that runs the program
-                            4. Continuous Integration and Deployment - Explain how you have the project setup to use
-                            GitHub Actions, How you can review code using a development server before merging pull
-                            requests, how you can deploy master to a production server. Explain how you deploy an image
-                            of your project to Dockerhub when master is updated. GitHub Actions Documentation (Links to
-                            an external site.).
-                        </p>
-                        <p>
-                            Read and cite / quote from these articles for CI/CD:
-                        </p>
-                        <p>
-                            https://www.martinfowler.com/articles/continuousIntegration.html (Links to an external
-                            site.)
-                            https://www.martinfowler.com/bliki/ContinuousDelivery.html
+
                         </p>
                         <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a>

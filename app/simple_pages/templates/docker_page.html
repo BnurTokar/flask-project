@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-        <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
-            <h1>Beyzanur Tokar's Docker Page</h1>
-            <h3 class="lead">You are getting the basic knowledge about containers, images, docker hub and you are going to learn how
-                to start a project and access the container with the terminal using terminal commands.</h3>
-            <br>
-        </div>
-        <div class="row md-4">
-            <div class="col-8">
-                <div id="main_content">
-                    <h2 style="color:red"> Containers:</h2>
+    <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-dark" style="background-color: whitesmoke">
+        <h1>Docker</h1>
+        <h3 class="lead">You are getting the basic knowledge about containers, images, docker hub and you are going to
+            learn how
+            to start a project and access the container with the terminal using terminal commands.</h3>
+        <br>
+    </div>
+    <div class="row md-4">
+        <div class="col-8">
+            <div id="main_content" class="container">
+                <h2> Containers:</h2>
                     <p class="lead">
                         Containerization and virtualization look similar but they are for different purposes. Container
                         engine provides Apps Operating System (OS).
@@ -18,17 +19,15 @@
                         In Virtual Machines, all computer have their own RAM. In Containers, infrastructure has RAM.
                         Operating system have access to the RAM.
                     </p>
-                    <p class="lead">
-                    <h2 style="color:red"> Images:</h2>
-                    </p>
+                <h2> Images:</h2>
+
                     <p class="lead">
                         A Docker image is a read-only template that contains a set of instructions for creating a
                         container
                         that can run on the Docker platform.
                     </p>
-                    <p class="lead">
-                    <h2 style="color:red"> The Docker Command:</h2>
-                    </p>
+                <h2> The Docker Command:</h2>
+
                     <p class="lead">
                         We are using the command line because web servers have a composition.
                     </p>
@@ -56,31 +55,29 @@
                     <p class="lead">
                         - Run the image in port 80 of the network on your computer.
                     </p>
-                    <p class="lead">
-                    <h2 style="color:red">How to Start Project:</h2>
-                    </p>
+                <h2>How to Start Project:</h2>
                     <p class="lead">
                         You can start the project using build an image command in the terminal. And you can access the
                         container by using “docker ps” command in the terminal.
                     </p>
-                    <!-- Optional JavaScript; choose one of the two! -->
+                <!-- Optional JavaScript; choose one of the two! -->
 
-                    <!-- Option 1: Bootstrap Bundle with Popper -->
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                            crossorigin="anonymous"></script>
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                        crossorigin="anonymous"></script>
 
-                    <!-- Option 2: Separate Popper and Bootstrap JS -->
-                    <!--
-                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-                    -->
-                    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-
-                </div>
-            </div>
-            <div class="col">
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                -->
+                <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
             </div>
         </div>
+        <div class="col">
+
+        </div>
+    </div>
 {% endblock %}
