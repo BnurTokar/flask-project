@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-    <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-white" style="background-color: darkslategrey">
+    <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-dark" style="background-color: whitesmoke">
         <h1>Pylint & Others</h1>
         <h3 class="lead"></h3>
     </div>
     <div class="row">
         <div class="col-8">
-            <div id="main_content">
+            <div id="main_content" class="container">
                 <h3>Pylint</h3>
                 <p class="lead">
-                    In Python language, Pylint is a tool used to check for errors of your code. It helps to find out
-                    things that are possible dangers in your codebase. It also gives a quick overview about your complex
-                    python code.
+                    In Python language, Pylint is a tool to check for errors in your code. It helps to find possible
+                    problems in your codebase. It also gives a quick overview about your complex python code.
+
                 </p>
                 <p class="lead">
-                    It is the first command line prompt:
+                    Type pylint in the command line prompt:
+
                 </p>
                 <p class="lead">
                     root@95b7ca75e8d8:/home/myuser# pylint
@@ -22,6 +23,7 @@
                 <p class="lead">
                     You have to care about messages of convention, refactor, warnings, errors, fatal after running this
                     command. Some example of the messages:
+
                 </p>
                 <p class="lead">
                     simplecaesar.py:3:0: W0301: Unnecessary semicolon (unnecessary-semicolon)
@@ -40,6 +42,7 @@
                     codebase in Python language. Readability is very important because a code is read much more often
                     than it is written as Guido van Rossum said. After a while after you wrote a code, you can
                     understand all of the code in a short time if you follow the Pep-8 guide.
+
                 </p>
                 <h5>How To Choose Names: </h5>
                 <p class="lead">
@@ -48,33 +51,55 @@
                 </p>
                 <p class="lead">
                     For example: function uses a lowercase word, and words with underscores like “function,
-                    my_function”.
-                    Class starts with a capital letter and continues with lowercase words.
+                    my_function”. Class starts with a capital letter and continues with lowercase words.
                 </p>
                 <p class="lead">
                     In addition to convention, giving descriptive names of what the object represents improves
-                    readability.
-                    Instead of giving the names of “x” and “y” to represent first name and last name for your variables,
-                    giving the names of “first_name” and “last_name” improves readability of the code.
+                    readability. Instead of giving the names of “x” and “y” to represent first name and last name for
+                    your variables, giving the names of “first_name” and “last_name” improves readability of the code.
                 </p>
                 <h5>Code Layout:</h5>
                 <p class="lead">
-                Black lines improve readability of the code.
-                PEP 8 suggests lines should be limited to 79 characters.
-                If breaking lines needs binary operation, you should put that before the operation.
-                Put 4 consecutive spaces for indentation instead of using tabs.
+                    * Black lines improve readability of the code.
+                </p>
+                <p class="lead">
+                    * PEP 8 suggests lines should be limited to 79 characters.
+                </p>
+                <p class="lead">
+                    * If breaking lines needs binary operation, you should put that before the operation.
+                </p>
+                <p class="lead">
+                    * Put 4 consecutive spaces for indentation instead of using tabs.
                 </p>
                 <h5>Comment and Documentation String:</h5>
                 <p class="lead">
-                Putting a comment inside of your code helps you to understand the functionality of your code blocks. Use
-                “#” and single space before your explanation. By giving inline comments, be more specific instead of
-                explaining everything. Put """ before and after your explanation for multiline strings.
+                    Putting a comment inside of your code helps you to understand the functionality of your code blocks.
+                    Use “#” and single space before your explanation. By giving inline comments, be more specific
+                    instead of explaining everything. Put """ before and after your explanation for multiline strings.
                 </p>
                 <h5>Linters and Autoformatters:</h5>
                 <p class="lead">
-                Linters and autoformatters are tools to help your code to fit the complaint of Pep-8. While Linters
-                shows flag errors and stylistic problems in the code. Autoformatters reformat your code automatically to
-                fit Pep-8 compliant.
+                    Linters and autoformatters are tools to help your code to fit the complaint of Pep-8. While Linters
+                    shows flag errors and stylistic problems in the code. Autoformatters reformat your code
+                    automatically to fit Pep-8 compliant.
+                </p>
+                <h3>Pytest</h3>
+                <p class="lead">
+                    Pytest is a Python testing framework. This offers a huge benefit to tests since we do not need to
+                    run the same code every single test. Even complex algorithms are tested effectively, while writing
+                    flexible tests in a system. Python provides an important set of productivity features to optimize
+                    the test.
+                </p>
+                <p class="lead">
+                    You can start Pytest by first creating a py module. Add a basic Python functions as the below
+                    example:
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/pytest_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    I created a calculator_test.py module and wrote the test_calculator_add_method. The method is
+                    testing the add() method of the Calculator class. It also shows the AAA (Arrange, Act, Assert)
+                    testing model which is a pattern for writing a good test.
                 </p>
 
             </div>

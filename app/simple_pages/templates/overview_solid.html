@@ -1,17 +1,162 @@
 {% extends "base.html" %}
 {% block content %}
     <div id="main_menu" class="p-4 p-md-5 mb-4 rounded text-dark" style="background-color: whitesmoke">
-        <h1>SOLID & Design Pattern</h1>
+        <h1>SOLID Principles & Design Pattern</h1>
         <h3 class="lead"></h3>
     </div>
     <div class="row">
         <div class="col-8">
             <div id="main_content" class="container">
-                <h3>SOLID</h3>
+                <h3>SOLID Principles:</h3>
+                <h4>1) The Single-Responsibility Principle (SRP):</h4>
                 <p class="lead">
+                    In other words, every component of your code (in general a class, can also be a function) should
+                    have one and only one responsibility. As a consequence of that, there should be only a valid reason
+                    to change it.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/single_responsibility_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    In this program, Calculator class splits two work in different methods, add and sub, to allow them
+                    to make different responsibilities.
 
                 </p>
+                <h4>2) The Open-Closed Principle (OCP):
+                </h4>
+                <p class="lead">
+                    You should not need to modify the code you have already written to accommodate new functionality.
+                    Simply add what you now need. In other words, the code is open for extension but close for any
+                    modification.
+                </p>
+                <p class="lead">
+                    This does not mean that you cannot change your code. If you need to add new functions similar to the
+                    one you already have, you should not require to change other parts of the code.
+
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/open_closed_principle.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    There are Addition and Subtraction classes with static methods, so they do not allow the
+                    modification to these methods, but they are available to open an extension within the class with new
+                    methods.
+
+                </p>
+
+                <h4>3) The Liskov Substitution Principle (LSP):</h4>
+                <p class="lead">
+                    Derived classes must be substitutable for their base classes. You should be able to change an
+                    instance using a sub-type.
+                </p>
+                <p class="lead">
+                    Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for
+                    objects y of type S where S is a subtype of T.
+                </p>
+                <p class="lead">
+                    The main class and subclass should have the same value return type, should have the same number of
+                    arguments, raise the same exceptions etc.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/liskov_substitution_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    In the above example, the main class “Calculator” does not return the same exceptions as the derived
+                    class “Divide” which throws “divide by zero error”.
+                </p>
+
+
+                <h4>4) The Interface Segregation Principle (ISP):</h4>
+                <p class="lead">
+                    In the context of classes, an interface is considered, all the methods and properties “exposed”,
+                    thus, everything that a user can interact with that belongs to the class.
+                </p>
+                <p class="lead">
+                    • More interfaces are better than less.
+                </p>
+                <p class="lead">
+                    • Allows to split the responsibility of a class without LSP violation.
+                </p>
+                <p class="lead">
+                    • Classes should not be forced to implement interfaces they do not use.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/interface_segregation_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    The sub-class Addition can invoke the method “subtract”. However, this will be a bummer, and based
+                    on this principle we must avoid such scenarios.
+                </p>
+
+
+                <h4>5. Dependency Inversion Principles:</h4>
+                <p class="lead">
+                    Dependency Inversion Principles include two principles. Firstly, high-level modules should not
+                    depend on low-level modules. They should depend on abstraction. Secondly, abstractions should not
+                    depend on details, details should depend on abstraction.
+                </p>
+
+                <h3>Design Pattern:</h3>
+                <p class="lead">
+                    Design pattern is a general solution for a particular problem in software design. You can follow the
+                    pattern details and implement a solution to your program.
+                </p>
+                <p class="lead">
+                    Design patterns are a toolkit of tried and tested solutions to common problems in software design.
+                    Hence, you can communicate efficiently with your teammates by implementing a common solution that
+                    suits
+                    the realities of your own program.
+                </p>
+                <p class="lead">
+                    There are 3 types of design patterns.
+                </p>
+                <p class="lead">
+                    * Creational patterns provide the ability to create various objects, so existing code is improved in
+                    terms
+                    of flexibility. Factory Method, Abstract Factory, Builder, Prototype, Singleton are examples of
+                    creational patterns.
+                </p>
+                <p class="lead">
+                    * Structural patterns provide flexible and efficient structures to assemble objects and classes into
+                    larger structures. They apply inheritance principles to compose interfaces. Adapter, Bridge,
+                    Composite,
+                    Decorator, Facade, Flyweight, Proxy are examples of structural patterns.
+                </p>
+                <p class="lead">
+                    * Behavioral patterns import algorithms and the communication between objects. Chain of
+                    Responsibility,
+                    Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor are
+                    examples
+                    of behavioral patterns.
+                </p>
+                <p class="lead">
+                    Let's look at design patterns with strategy design.
+                </p>
+
+                <h4>Strategy Design:</h4>
+                <p class="lead">
+                    Strategy Design is the type of a behavioral design pattern. In the strategy pattern, you have to
+                    create different classes for each algorithm which means that the strategy pattern encapsulates each
+                    algorithm. It enables clients to choose logic it wans to complete the task.
+                </p>
+                <p class="lead">
+                    You can see the concept of strategy design from the below diagram. When the client class,
+                    Calculator(), wants to add two values, it asks the Calculation class to create an “Addition”
+                    interface from the Operation class. Calculation class does not care about which algorithm is chosen.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/strategy_design_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    Below is Python code snippet to demonstrate the strategy design pattern.
+                </p>
+                <img src="{{ url_for('static', filename='webpage_images/strategy_design_calculation.png') }}"
+                     class="d-block img-thumbnail rounded">
+                <p class="lead">
+                    opr is an Operation interface getting algorithm from Operation’s one of child classes. setStrategy method is used to create algorithms from Operation class. On the other hand, the get_result method is returning the result that the client requested.
+                </p>
+<img src="{{ url_for('static', filename='webpage_images/strategy_design_operation_img.png') }}"
+                     class="d-block img-thumbnail rounded">
+
+
             </div>
+
+
             <!-- Optional JavaScript; choose one of the two! -->
 
             <!-- Option 1: Bootstrap Bundle with Popper -->
