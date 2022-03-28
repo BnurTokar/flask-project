@@ -8,6 +8,10 @@ def test_request_main_menu_links(client):
     assert b'<a class="nav-link" href="/docker_page">Docker</a>' in response.data
     assert b'<a class="nav-link" href="/python_flask_page">Python/Flask</a>' in response.data
     assert b'<a class="nav-link" href="/cicd_page">CI/CD</a>' in response.data
+    assert b'<a class="nav-link" href="/pylint_others">Article1</a>' in response.data
+    assert b'<a class="nav-link" href="/overview_solid">Article2</a>' in response.data
+    assert b'<a class="nav-link" href="/oops_terms">Article3</a>' in response.data
+    assert b'<a class="nav-link" href="/aaa_testing">Article4</a>' in response.data
 
 def test_request_index(client):
     """This makes the index page"""
@@ -45,7 +49,32 @@ def test_request_page4(client):
     assert response.status_code == 200
     assert b"CI/CD" in response.data
 
+def test_request_article1(client):
+    """This makes the index page"""
+    response = client.get("/pylint_others")
+    assert response.status_code == 200
+    assert b"Pylint & Others" in response.data
+
+def test_request_article2(client):
+    """This makes the index page"""
+    response = client.get("/overview_solid")
+    assert response.status_code == 200
+    assert b"SOLID Principles & Design Pattern" in response.data
+
+def test_request_article3(client):
+    """This makes the index page"""
+    response = client.get("/oops_terms")
+    assert response.status_code == 200
+    assert b"Object Oriented Programming (OOP) Terms in Python:" in response.data
+
+def test_request_article4(client):
+    """This makes the index page"""
+    response = client.get("/aaa_testing")
+    assert response.status_code == 200
+    assert b"AAA Testing" in response.data
+
 def test_request_page_not_found(client):
     """This makes the index page"""
     response = client.get("/page5")
     assert response.status_code == 404
+
