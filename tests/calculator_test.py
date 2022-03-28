@@ -17,11 +17,9 @@ from calculator import Calculator
 
 def test_calculator_add_method():
     """arranging step"""
-    value_1 = 3
-    value_2 = 4
     calculator = Calculator()
     """acting step"""
-    result= calculator.add(value_1, value_2)
+    result= calculator.add(3, 4)
     """assertion step"""
     assert result == 7
 
