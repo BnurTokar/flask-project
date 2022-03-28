@@ -7,7 +7,22 @@
 
 [![Production Workflow](https://github.com/BnurTokar/flask-project/actions/workflows/prod.yml/badge.svg)](https://github.com/BnurTokar/flask-project/actions/workflows/prod.yml)
 
-*[Production Deployment](https://beyzanur-flask-prod.herokuapp.com)
+*[Production Deployment](https://beyzanur-prod.herokuapp.com)
+
+## Article-1 
+* https://docs.google.com/document/d/1OA4iispsrqL-_V-uoX-Em8t0L4syozR69itk7arQt-s/edit?usp=sharing 
+
+## Article-2
+* https://docs.google.com/document/d/1MdrMjAp-E2Lwek4VtQ1b7Y15bk5sLgWUEZCOjDI8qxM/edit?usp=sharing
+
+## Article-3
+* https://docs.google.com/document/d/1Y7IuzHGwey24O66PJDlSmFLvMTIKU2bCWDFIqwVG0V4/edit?usp=sharing
+
+## Article-4
+* https://docs.google.com/document/d/1_eoTS9yKeXkNdQDD-isfbLCxRuVdQScZ7uxZLixJT10/edit?usp=sharing
+
+
+
 
 
 ## Setting up CI/CD
